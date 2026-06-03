@@ -301,3 +301,91 @@ body {
 a {
   text-decoration: none;
 }
+
+.season-banner {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 25px;
+  border: 5px solid #D9B26D;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.season-banner:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
+  transition: all 0.3s ease;
+}
+
+.season-title {
+  text-align: center;
+  color: #8C2F27;
+  font-size: 55px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  transition: all .4s ease;
+  cursor: default;
+}
+
+.season-title:hover {
+  letter-spacing: 8px;
+  color: #7a5c45;
+  transform: translateY(-3px);
+  text-shadow: 0 8px 15px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+
+.season-divider {
+  width: 120px;
+  height: 4px;
+  background: #D9B26D;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+
+.season-divider:hover {
+  width: 220px;
+  background: #8C2F27;
+}
+
+.season-description {
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  font-size: 20px;
+  color: #58402f;
+  line-height: 1.8;
+  transition: .3s ease;
+}
+
+.season-description:hover {
+  color: #8C2F27;
+  transform: scale(1.01);
+  text-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: .3s ease;
+}
+
+.activities-heading {
+  text-align: center;
+  color: #8C2F27;
+  font-size: 35px;
+}
+
+.season-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  border: 3px solid #D9B26D;
+  transition: all .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.season-card:hover {
+  transform: translateY(-12px) rotate(-1deg);
+  box-shadow: 0 20px 35px rgba(0,0,0,.2);
+  border-color: #8C2F27;
+}
+
