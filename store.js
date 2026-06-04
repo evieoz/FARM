@@ -1,12 +1,44 @@
 const products = [
-  { name: "Produce Basket", image: "produce.png", price: 18 },
-  { name: "Sourdough Bread", image: "bread.png", price: 6 },
-  { name: "Fresh Eggs", image: "eggs.png", price: 5 },
-  { name: "Strawberry Preserves", image: "strawberry.png", price: 7 },
-  { name: "Blueberry Preserves", image: "blueberry.png", price: 7 },
-  { name: "Apple Pie", image: "applepie.png", price: 12 },
-  { name: "Raw Honey", image: "honey.png", price: 10 },
-  { name: "Apple Cider", image: "applecider.png", price: 8 }
+  { 
+    name: "Produce Basket",
+    image: "produce.png",
+    price: 18
+  },
+  { 
+    name:"Sourdough Bread",
+    image: "bread.png",
+    price: 6
+  },
+  { 
+    name: "Fresh Eggs", 
+    image: "eggs.png", 
+    price: 5 
+  },
+  { 
+    name: "Strawberry Preserves", 
+    image: "strawberry.png", 
+    price: 7 
+  },
+  { 
+    name: "Blueberry Preserves", 
+    image: "blueberry.png", 
+    price: 7 
+  },
+  { 
+    name: "Apple Pie", 
+    image: "applepie.png",
+    price: 12 
+    },
+  { 
+    name: "Raw Honey", 
+    image: "honey.png", 
+    price: 10 
+  },
+  { 
+    name: "Apple Cider",
+    image: "applecider.png", 
+    price: 8 
+    },
 ];
 
 let cart = [];
@@ -46,9 +78,7 @@ function addToCart(index) {
 searchBar.addEventListener("input", () => {
   const value = searchBar.value.toLowerCase();
 
-  const filtered = products.filter(p =>
-    p.name.toLowerCase().includes(value)
-  );
+  const filtered = products.filter((p) => p.name.toLowerCase().includes(value));
 
   render(filtered);
 });

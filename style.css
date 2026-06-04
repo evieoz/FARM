@@ -11,7 +11,7 @@ h1, h2, h3 {
 
 /* NAVBAR */
 nav {
-  background-color: #7a5c45;
+  background-color: #78563e;
   font-family: "lora", serif;
 }
 
@@ -414,4 +414,21 @@ a {
 .product-img:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
+}
+
+.view {
+  color: #D9B26D;
+}
+
+.all {
+  background-color: #8C2F27;
+  border-radius: 30px;
+  padding: 1%;
+  transition: all .35s ease;
+}
+.all:hover {
+  transform: translateY(-8px) rotate(-0.8deg);
+  box-shadow: 0 20px 35px rgba(0,0,0,.2);
+  border-color: #8C2F27;
+  transition: all .35s ease;
 }
