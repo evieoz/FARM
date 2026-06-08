@@ -27,7 +27,6 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="seasons.html">Seasons</a></li>
-        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
         <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
@@ -41,9 +40,31 @@
   <h1 class="intro">All Events at Hollow Creek Farm</h1>
 
   <!-- SEARCH BAR -->
-  <input type="text" id="searchBar" class="form-control w-50 mx-auto mb-4"
+  <input type="text" id="searchBar" class="form-control search w-50 mx-auto mb-4"
          placeholder="Search products...">
-         
+         <div class="text-center mb-4">
+
+  <button onclick="filterSeason('All')" class="events-btn">
+    All
+  </button>
+
+  <button onclick="filterSeason('Spring')" class="events-btn">
+    Spring
+  </button>
+
+  <button onclick="filterSeason('Summer')" class="events-btn">
+    Summer
+  </button>
+
+  <button onclick="filterSeason('Fall')" class="events-btn">
+    Fall
+  </button>
+
+  <button onclick="filterSeason('Winter')" class="events-btn">
+    Winter
+  </button>
+
+</div>
 
   
   <div class="row g-4" id="Seasons"></div>

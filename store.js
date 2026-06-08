@@ -49,17 +49,17 @@ const searchBar = document.getElementById("searchBar");
 function render(items) {
   container.innerHTML = "";
 
-  items.forEach((p, index) => {
+  items.forEach((p) => {
     container.innerHTML += `
       <div class="col-md-4">
-        <div class="season-card text-center h-100">
+        <div class="store-card text-center h-100">
 
           <img src="${p.image}" class="product-img">
 
           <h3>${p.name}</h3>
           <p>$${p.price}.00</p>
 
-          <button class="farm-btn" onclick="addToCart(${index})">
+          <button class="farm-btn" onclick="addToCartByName('${p.name}')">
             Add to Cart
           </button>
 
@@ -69,11 +69,38 @@ function render(items) {
   });
 }
 
-function addToCart(index) {
-  cart.push(products[index]);
-  alert(products[index].name + " added to cart 🧺");
-  console.log(cart);
+
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  updateCart();
 }
+
+function checkout() {
+
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  let receipt = "HOLLOW CREEK FARM \n\n";
+  let total = 0;
+
+  cart.forEach(item => {
+    receipt += item.name + " - $" + item.price + "\n";
+    total += item.price;
+  });
+
+  receipt += "\n-----------------\nTOTAL: $" + total;
+
+  alert(receipt);
+
+  cart = [];
+  updateCart();
+
+  alert("Thank you for shopping at Hollow Creek Farm!");
+}
+
 
 searchBar.addEventListener("input", () => {
   const value = searchBar.value.toLowerCase();
@@ -83,4 +110,45 @@ searchBar.addEventListener("input", () => {
   render(filtered);
 });
 
+
+function updateCart() {
+
+  document.getElementById("cartCount").innerText = cart.length;
+
+  let total = 0;
+  let itemList = "";
+
+  cart.forEach((item, i) => {
+
+    total += item.price;
+
+    itemList += `
+      <p>
+        ${item.name} - $${item.price}
+
+        <button
+          onclick="removeItem(${i})"
+          class="btn btn-sm btn-danger ms-2">
+          X
+        </button>
+      </p>
+    `;
+  });
+
+  document.getElementById("cartTotal").innerText = total;
+  document.getElementById("cartItems").innerHTML = itemList;
+}
+
+function addToCartByName(name) {
+
+  const product = products.find(p => p.name === name);
+
+  cart.push(product);
+
+  updateCart();
+
+  alert(product.name + " added to cart");
+}
+
 render(products);
+
