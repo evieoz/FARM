@@ -75,14 +75,14 @@ const events = [
     name: "Fresh Winter Wreaths",
     season: "Winter",
     description: "Handmade wreaths and greenery decorations sold daily during the winter months.",
-    image: "winter.jpg",
+    image: "wreath.jpg",
     dates: "December - March"
   },
   { 
     name: "Year-Round Farm Store",
     season: "Winter",
     description: "Farm store remains open year-round with reduced hours through early spring.",
-    image: "winter.jpg",
+    image: "yearround.jpg",
     dates: "December - March"
   },
 
@@ -115,6 +115,8 @@ const events = [
     dates: "September - November"
   },
 ];
+
+//IMAGES MADE ON CANVA OR FROM THE GIVEN IMAGES
 
 const container = document.getElementById("Seasons");
 const searchBar = document.getElementById("searchBar");

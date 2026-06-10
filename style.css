@@ -3,6 +3,15 @@ body {
   color: #333;
   margin: 0;
   font-family: Georgia, serif;
+  cursor: url("cursor.png"), auto;
+}
+
+html {
+  cursor: url("cursor.png"), auto;
+}
+
+:hover {
+    cursor: url("cursor.png"), auto;
 }
 
 h1, h2, h3 {
@@ -55,6 +64,7 @@ nav {
   border-radius: 6px;
   font-family: Georgia, serif;
   transition: all 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .farm-btn:hover {
@@ -62,6 +72,7 @@ nav {
   border-color: #7a5c45;
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  cursor: url("cursor.png"), auto;
 }
 
 /* CARDS */
@@ -82,6 +93,7 @@ nav {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   transition: 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 /* FOOTER */
@@ -147,6 +159,7 @@ body {
 
 .nav-link:hover::after {
   width: 100%;
+  cursor: url("cursor.png"), auto;
 }
 
 /* HERO TITLE ANIMATION */
@@ -174,6 +187,7 @@ body {
 .navbar-brand:hover img {
   transform: rotate(-5deg) scale(1.08);
   transition: 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 /* CARD GLOW */
@@ -181,12 +195,14 @@ body {
 .product-card:hover, {
   border-color: #8C2F27;
   transition: 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 /* FOOTER LINK EFFECT */
 .footer:hover {
   letter-spacing: 1px;
   transition: 0.3s;
+  cursor: url("cursor.png"), auto;
 }
 
 /* BUTTON CLICK EFFECT */
@@ -213,6 +229,7 @@ body {
   box-shadow:
     0 20px 40px rgba(0,0,0,0.2),
     0 0 20px rgba(216,178,110,0.5);
+  cursor: url("cursor.png"), auto;
 }
 
 
@@ -227,6 +244,7 @@ body {
   transition: 0.3s ease;
   filter: brightness(1.1);
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  cursor: url("cursor.png"), auto;
 }
 
 .season-img-box {
@@ -248,6 +266,7 @@ body {
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   filter: brightness(1.05);
   transition: all 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .season-img-box img {
@@ -261,6 +280,7 @@ body {
   transform: scale(1.08);
   filter: brightness(1.1);
   transition: 0.4s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .snames {
@@ -278,6 +298,7 @@ body {
   letter-spacing: 4px;
   color: #47301e;
   text-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  cursor: url("cursor.png"), auto;
 }
 
 /* underline glow effect */
@@ -296,6 +317,7 @@ body {
 
 .snames:hover::after {
   width: 60%;
+  cursor: url("cursor.png"), auto;
 }
 
 a {
@@ -315,6 +337,7 @@ a {
   transform: scale(1.02);
   box-shadow: 0 15px 30px rgba(0,0,0,.25);
   transition: all 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .season-title {
@@ -334,6 +357,7 @@ a {
   transform: translateY(-3px);
   text-shadow: 0 8px 15px rgba(0,0,0,.15);
   transition: all .4s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .season-divider {
@@ -348,6 +372,7 @@ a {
 .season-divider:hover {
   width: 220px;
   background: #8C2F27;
+  cursor: url("cursor.png"), auto;
 }
 
 .season-description {
@@ -365,6 +390,7 @@ a {
   transform: scale(1.01);
   text-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: .3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .activities-heading {
@@ -387,33 +413,18 @@ a {
   transform: translateY(-12px) rotate(-1deg);
   box-shadow: 0 20px 35px rgba(0,0,0,.2);
   border-color: #8C2F27;
-}
-
-#storeContainer img {
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
-  border: 3px solid #D9B26D;
-  transition: .3s ease;
-}
-
-#storeContainer img:hover {
-  transform: scale(1.05);
+  cursor: url("cursor.png"), auto;
 }
 
 .product-img {
-  width: 100%;
-  height: 200px;
+  width: 90%;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   border: 3px solid #D9B26D;
   transition: 0.3s ease;
-  margin-bottom: 15px;
-}
-
-.product-img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .view {
@@ -431,6 +442,7 @@ a {
   box-shadow: 0 20px 35px rgba(0,0,0,.2);
   border-color: #8C2F27;
   transition: all .35s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 #cartItems {
@@ -450,6 +462,7 @@ a {
 
 .btn-danger:hover {
   background-color: #6d241e;
+  cursor: url("cursor.png"), auto;
 }
 
 .events-btn {
@@ -461,6 +474,7 @@ a {
   padding-left: 2%;
   padding-right: 2%;
   font-size: 150%;
+  cursor: url("cursor.png"), auto;
 }
 
 .events-card {
@@ -476,6 +490,7 @@ a {
   transition: 0.3s ease;
   transform: rotate(1deg) scale(1.08);
   transition: 0.3s ease;
+  cursor: url("cursor.png"), auto;
 }
 
 .event-img {
@@ -490,21 +505,107 @@ a {
   background-color: #D9B26D;
   border: 4px solid #6d241e;
 }
-
-.cart-panel {
-  position: fixed;
-  right: -350px;
-  top: 0;
-  width: 320px;
-  height: 100vh;
-  background: #f5f0e6;
-  border-left: 4px solid #8C2F27;
-  padding: 20px;
-  box-shadow: -10px 0 30px rgba(0,0,0,0.2);
-  transition: 0.4s ease;
-  z-index: 999;
+.search:hover {
+  background-color: #6d241e;
+  color: #D9B26D;
+  transition: 0.3s ease;
 }
 
-.cart-panel.open {
-  right: 0;
+.store-card {
+  background-color: white;
+  color: #6d241e;
+  border-radius: 25px;
+  border: 4px solid #D9B26D;
+  transition: 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+  transform: rotate(1deg) scale(1.08);
+  transition: 0.3s ease;
+  cursor: url("cursor.png"), auto;
+}
+
+/* CONTACT PAGE */
+
+.banner-img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block;
+}
+
+.contact-box{
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  border:4px solid #D9B26D;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  transition:0.4s ease;
+}
+
+.contact-box:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+  cursor: url("cursor.png"), auto;
+}
+
+.table{
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.table th{
+  background:#8C2F27;
+  color:white;
+}
+
+.table td{
+  background:#fffaf2;
+}
+
+.form-control{
+  border:2px solid #D9B26D;
+  border-radius:12px;
+  transition:0.3s ease;
+}
+
+.form-control:focus{
+  border-color:#8C2F27;
+  box-shadow:0 0 15px rgba(140,47,39,0.3);
+}
+
+.contact-box h2{
+  color:#8C2F27;
+  margin-bottom:20px;
+}
+
+.contact-box h3{
+  color:#7a5c45;
+}
+
+.contact-box p{
+  font-size:17px;
+}
+
+.banner-img:hover{
+  filter:brightness(1.05);
+  transition:0.4s ease;
+  cursor: url("cursor.png"), auto;
+}
+
+.video-banner {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

@@ -39,6 +39,11 @@ const products = [
     image: "applecider.png", 
     price: 8 
     },
+  {
+    name: "Strawberry Lemonade",
+    image: "strawberrylemonade.png",
+    price: 8,
+  },
 ];
 
 let cart = [];
